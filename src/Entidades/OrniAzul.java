@@ -1,7 +1,7 @@
 package Entidades;
 import Entidades.Interfaces.Pata;
 import java.util.Scanner;
-public class OrniAzul extends Castor implements Pata {
+public class OrniAzul extends Castor {
     private int propulsion;
     private String nombre;
     public OrniAzul(int velocidad, int propulsion, String nombre) {
@@ -20,14 +20,6 @@ public class OrniAzul extends Castor implements Pata {
     public void tocarGuitarra(){
         int numR = (int) (Math.random()*6)+0;
     System.out.println("Toca cuerda: "+ numR);
-}
-
-    @Override
-    public void tocarOrgano() {
-        Scanner oprimir = new Scanner(System.in);
-        System.out.println("Do - Re - Mi");
-        oprimir.nextLine();//se espera a que presiona enter para mostrar el siguiente sout
-        System.out.println("Fa - Sol - La - Si");
     }
-  
+
 }
