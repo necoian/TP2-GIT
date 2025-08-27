@@ -3,9 +3,11 @@ import Entidades.Interfaces.Pata;
 import java.util.Scanner;
 public class OrniAzul extends Castor implements Pata {
     private int propulsion;
-    public OrniAzul(int velocidad, int propulsion) {
+    private String nombre;
+    public OrniAzul(int velocidad, int propulsion, String nombre) {
         super(velocidad);
         this.propulsion = propulsion;
+        this.nombre = nombre;
     }
     //sobreescribimos el metodo del padre 
     @Override
