@@ -1,6 +1,7 @@
 
 import Entidades.Castor;
 import Entidades.OrniAzul;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 
@@ -40,6 +41,26 @@ public class TestMain {
         o1.nadar();
         System.out.println("blue");
         o2.nadar();
+        //metodo de tocarGuitarra
+        System.out.println("bluey");
+         o1.tocarGuitarra();
+        System.out.println("blue");
+         o2.tocarGuitarra();
+         //creamos arreglo
+        LinkedHashSet<Castor>ornitorrincos = new LinkedHashSet();
+        //Agregamos los ornitorrincos
+        try{
+          Castor[] ornit = new Castor[3];
+        //ornit[0] = ornitorrinco verde;
+          ornit[1] = o1;
+          ornit[2] = o2;
+        }catch(ArrayIndexOutOfBoundsException error){
+            System.out.println("Se salio del arreglo");
+        }finally{
+            System.out.println("ornitohermanos juntos al fin");
+        }
+       
+         
     }
     
 }

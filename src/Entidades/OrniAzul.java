@@ -18,7 +18,7 @@ public class OrniAzul extends Castor {
     
     @Override
     public void tocarGuitarra(){
-        int numR = (int) (Math.random()*6)+0;
+        int numR = (int) (Math.random()*6)+1;
     System.out.println("Toca cuerda: "+ numR);
     }
 
